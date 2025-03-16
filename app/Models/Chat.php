@@ -11,7 +11,8 @@ class Chat extends Model
 
       // Fields that can be mass-assigned
     protected $fillable = [
-        'message',
-        'response',
+        'pharmacy_name',
+        'pharmacy_email',
+        'pharmacy_contact',
     ];
 }

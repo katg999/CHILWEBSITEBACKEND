@@ -13,8 +13,9 @@ return new class extends Migration
     {
         Schema::create('chats', function (Blueprint $table) {
             $table->id();
-            $table->string('message'); // Stores the user's message
-            $table->string('response'); // Stores the bot's response
+            $table->string('pharmacy_name'); // Pharmacy name
+            $table->string('pharmacy_email'); // Pharmacy email
+            $table->string('pharmacy_contact'); // Pharmacy contact
             $table->timestamps(); // Adds created_at and updated_at columns
         });
     }
